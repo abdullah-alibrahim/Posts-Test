@@ -14,7 +14,6 @@ class PostController extends GetxController {
 
   Future<List<PostModel>> fetchPosts(String? page, String? limit) async {
     _posts = _posts + await GetPosts(page!, limit!);
-    // print('customer list is ${_customer[0].DEFINITION_}');
     return _posts;
   }
 
